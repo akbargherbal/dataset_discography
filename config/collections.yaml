@@ -1,0 +1,22 @@
+# Mapping from bucket/GitHub source locations to canonical collection names.
+collections:
+  discography_album:
+    prefixes: ["DISCOGRAPHY/ELISSA/", "DISCOGRAPHY/FADL_SHAKER/"]
+    is_generated: false
+    description: "Commercial album tracks (Elissa, Fadl Shaker)"
+  spotify_p0:
+    prefixes: ["DISCOGRAPHY/p0/"]
+    is_generated: false
+    description: "Spotify export, UUID filenames, no metadata"
+  spotify_pd:
+    prefixes: ["DISCOGRAPHY/pd/"]
+    is_generated: false
+    description: "Spotify export (second batch), UUID filenames, no metadata"
+  youtube_ref:
+    prefixes: ["DISCOGRAPHY/TODO/", "DISCOGRAPHY/ajam_major/"]
+    is_generated: false
+    description: "YouTube reference audio with video id in filename"
+  generated_arabmaqamrock:
+    prefixes: ["arabmaqamrock/"]
+    is_generated: true
+    description: "Generated Arab Maqam Rock material (deferred to v0.2)"

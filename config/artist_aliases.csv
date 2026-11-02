@@ -1,0 +1,15 @@
+artist_id,name_lat,name_ar,aliases,country,source
+art_elissa,Elissa,إليسا,"Elissa|Elisa|إليسا|اليسا|alysa",Lebanon,discography
+art_fadl_shaker,Fadl Shaker,فضل شاكر,"Fadl Shaker|Fadel Chaker|Fadl Shakir|فضل شاكر|fdhl-shakr",Lebanon,discography
+art_unknown,Unknown,,"unknown",,youtube_ref
+art_unknown_spotify,Unknown (Spotify),,"unknown spotify|spotify",,discography
+art_abdullah_al_rowshed,Abdullah Al Rowaished,عبدالله الرويشد,"Abdullah Al Rowaished|Abdullah Al-Rowaished|Abdualla Ruwaished|عبدالله الرويشد",Kuwait,youtube_ref
+art_ebadi_aljohar,Ebadi AlJohar,عبادي الجوهر,"Ebadi AlJohar|Abadi Aljowhar|عبادي الجوهر",Saudi Arabia,youtube_ref
+art_enrique_iglesias,Enrique Iglesias,,"Enrique Iglesias",Spain,youtube_ref
+art_rashed_almajid,Rashed AlMajid,راشد الماجد,"Rashed AlMajid|راشد الماجد",Saudi Arabia,youtube_ref
+art_ricky_martin,Ricky Martin,,"Ricky Martin",Puerto Rico,youtube_ref
+art_santana,Santana,,"Santana",United States,youtube_ref
+art_talal_maddah,Talal Maddah,طلال مداح,"Talal Maddah|طلال مداح",Saudi Arabia,youtube_ref
+art_kelly_clarkson,Kelly Clarkson,,"Kelly Clarkson",United States,youtube_ref
+art_maroon_5,Maroon 5,,"Maroon 5",United States,youtube_ref
+art_taylor_swift,Taylor Swift,,"Taylor Swift",United States,youtube_ref

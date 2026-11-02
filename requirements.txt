@@ -1,0 +1,7 @@
+google-cloud-storage>=3.0
+pandas>=2.2
+pyarrow>=17.0
+duckdb>=1.0
+rapidfuzz>=3.0
+pyyaml>=6.0
+pytest>=8.0

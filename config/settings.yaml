@@ -1,0 +1,56 @@
+# Dataset Discography — pipeline configuration (v0.1)
+#
+# All audio references in the produced dataset are RELATIVE paths from the
+# bucket root.  Audio bytes are never written to the dataset.
+
+pipeline_version: "0.1.0"
+dataset_version: "v0.1"
+
+gcs:
+  bucket: "akbar-december-2024-backup"
+  # Project is only used for API quota; bucket access is granted through IAM.
+  project: "cinematic-react-patterns"
+  prefixes:
+    discography: "DISCOGRAPHY/"
+    srt: "SRT/v1/"
+    transcripts: "TRANSCRIPTS/"
+  output_prefix: "DATASET/v0.1/"
+
+# Exact commits used for this snapshot.  scan_github checks them out before
+# reading anything, so a rebuild is not affected by upstream branch movement.
+github:
+  sources_dir: "build/sources"
+  repos:
+    yue2:
+      url: "https://github.com/akbargherbal/yue2-karaoke-align.git"
+      commit: "ad17c8fe6fc127456f0af4f79c68d4480c10ac8b"
+    mcap:
+      url: "https://github.com/akbargherbal/music_captioning_oct_2026.git"
+      commit: "dd7b7d2035a2d625d1db79d4926ffab71c9ad4d6"
+    lyrics:
+      url: "https://github.com/akbargherbal/arabic-music-lyrics.git"
+      commit: "74405c5755e3ba8ea53a4272a338f6d35c62b21c"
+
+# Dataset packaging policy.
+package:
+  # full   : include the lyrics text (default for v0.1; sources are public web pages)
+  # hash   : omit text, keep source_url + text_match hash + statistics
+  lyrics_text_policy: "full"
+  max_size_mb: 100
+  splits:
+    train: 0.80
+    val: 0.10
+    test: 0.10
+    seed: "dataset-discography-v0.1"
+
+# Confidence thresholds from DESIGN.md.
+thresholds:
+  gold: 0.95
+  exact_sha256: 1.00
+  source_uri: 0.99
+  legacy_track_id: 0.98
+  youtube_id: 0.99
+  filename_album: 0.95
+  existing_index: 0.90
+  title_exact: 0.98
+  title_fuzzy_min: 0.90

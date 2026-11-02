@@ -1,0 +1,352 @@
+{
+  "dataset": "Arabic Music Discography Graph",
+  "dataset_version": "v0.1",
+  "pipeline_version": "0.1.0",
+  "snapshot_id": "snap_83c2acbb6a0a4466f3e5fd2d",
+  "gcs_snapshot_id": "snap_ae834a5cc97bd2c53b1be199",
+  "generated_at": "2026-11-02T11:27:55.607535",
+  "source_bucket": "akbar-december-2024-backup",
+  "source_commits": {
+    "yue2": "ad17c8fe6fc127456f0af4f79c68d4480c10ac8b",
+    "mcap": "dd7b7d2035a2d625d1db79d4926ffab71c9ad4d6",
+    "lyrics": "74405c5755e3ba8ea53a4272a338f6d35c62b21c"
+  },
+  "source_repos": {
+    "yue2": "https://github.com/akbargherbal/yue2-karaoke-align.git",
+    "mcap": "https://github.com/akbargherbal/music_captioning_oct_2026.git",
+    "lyrics": "https://github.com/akbargherbal/arabic-music-lyrics.git"
+  },
+  "counts": {
+    "artists": 14,
+    "albums": 23,
+    "works": 224,
+    "recordings": 328,
+    "legacy_ids": 1300,
+    "recording_works": 249,
+    "lyrics": 756,
+    "timings": 167,
+    "transcripts": 236,
+    "captions": 230,
+    "links": 997,
+    "files": 1316,
+    "coverage": 328,
+    "splits": 224,
+    "album_tracks": 236,
+    "lyrics_gold": 177,
+    "unique_audio_files": 328,
+    "audio_bytes_referenced": 3308600217
+  },
+  "expected_counts": {
+    "recordings": 329,
+    "album_tracks": 236,
+    "timings": 167,
+    "transcripts": 236,
+    "captions": 230,
+    "lyrics_gold": 174
+  },
+  "count_deltas": {
+    "recordings": -1,
+    "album_tracks": 0,
+    "timings": 0,
+    "transcripts": 0,
+    "captions": 0,
+    "lyrics_gold": 3
+  },
+  "count_delta_reasons": {
+    "recordings": "15 byte-identical duplicates were found (14 p0/pd + 1 pd/TODO), not 14; content-addressed identity therefore yields 328 unique recordings instead of the planned ~329.",
+    "lyrics_gold": "174 title-map seed matches plus 3 additional exact title+artist matches outside the seed (Lola El Malama, Yana Yana, Hawa Ya Hawa).",
+    "transcripts": "The pinned ABC source contains 227 ok and 9 no-abc tracks; no-abc rows are kept as flagged transcripts with empty abc_text.",
+    "p0_pd_unresolved": "79 unique p0/pd recordings remain without metadata (the 80th unique p0/pd file is byte-identical to a TODO reference and was canonicalised to it)."
+  },
+  "audio_policy": {
+    "audio_embedded": false,
+    "images_embedded": false,
+    "paths": "relative to bucket root",
+    "audio_bucket_field": "recordings.audio_bucket"
+  },
+  "lyrics_text_policy": "full",
+  "data_bytes": 3637085,
+  "data_files": {
+    "artifacts/captions.parquet": {
+      "sha256": "b68a1bdca4e5257a1c9025dd1085e9abca3bb1e2fcef7f09e0ba96a0bc65980e",
+      "bytes": 293426
+    },
+    "artifacts/lyrics.parquet": {
+      "sha256": "3fd3d4d21fa5f062b082f0552a21ac5a65b548c2e3d5388281fa0ffa6c4940ea",
+      "bytes": 683816
+    },
+    "artifacts/timings.parquet": {
+      "sha256": "9f1cb25aa1d1580dc2b440fcea7ecc814a5d75ad2968f9ba302b518d7d0f106c",
+      "bytes": 62364
+    },
+    "artifacts/transcripts.parquet": {
+      "sha256": "8db2f9a5bcc54df86e2ef23f5558878e7d9d441ca440c5447df4344e3042e92c",
+      "bytes": 391765
+    },
+    "catalog/albums.parquet": {
+      "sha256": "f5c9b07f4fca34bc42b66f53fff847a600ecadbd5e2d4ff96fcfc738199514e2",
+      "bytes": 7830
+    },
+    "catalog/artists.parquet": {
+      "sha256": "150ed144aa47db1ea34815dad968070f2dc15594b08a83448824c1848b753991",
+      "bytes": 5830
+    },
+    "catalog/legacy_ids.parquet": {
+      "sha256": "b85fdd2f8a3b8900ab90433c3088f9a006e164bf610694bb5a8b724267d2ba31",
+      "bytes": 30979
+    },
+    "catalog/recording_works.parquet": {
+      "sha256": "39fe8a80438754e6d13431be944ff6876fa9e452c86dab7843a2444269d3b7ed",
+      "bytes": 11709
+    },
+    "catalog/recordings.parquet": {
+      "sha256": "d2aa853a4b85915102bafbd6bb9e70d35f4277a2c4e623bb38d8ce0b4befed92",
+      "bytes": 91287
+    },
+    "catalog/works.parquet": {
+      "sha256": "76095dc6407412b43518491090396ded2ff88863db6272f20c5078f51621e8ca",
+      "bytes": 20297
+    },
+    "jsonl/recordings.jsonl": {
+      "sha256": "5a7141d6bb7cb821ac97d645936326fc3cf4e5ef9be7d07e6ddc70e52d8dfc08",
+      "bytes": 1525526
+    },
+    "links/links.parquet": {
+      "sha256": "3794e523992e0c0389fbd627ad5573d72b328749ee5c4ebc52ab4376f7cb61db",
+      "bytes": 101908
+    },
+    "links/unresolved.parquet": {
+      "sha256": "5fd70c7a5b21717bc42710587b057d59d27bd9dbf6f288daf947270c85032118",
+      "bytes": 11284
+    },
+    "manifests/audio_index.parquet": {
+      "sha256": "9bbcf9a294bd09adb77468b035f2f9891cb13a9cd756231ec15776fac937b0b2",
+      "bytes": 93849
+    },
+    "manifests/coverage.parquet": {
+      "sha256": "08f80e79737f74cf2e17c7abb3b2ecba1b904e02756c8a957297ee06af73d75b",
+      "bytes": 17663
+    },
+    "manifests/files.parquet": {
+      "sha256": "b4df18495d996a9f15c1f1b4a53737672629b8fee6e3fad52cb8def5fb39040d",
+      "bytes": 257202
+    },
+    "schema/core.sql": {
+      "sha256": "8afe3860bd2e7155dfcdaf74bddc88890ac07cef55b89216f0981684b630b930",
+      "bytes": 10299
+    },
+    "schema/schema.json": {
+      "sha256": "685010c317c56be17b28e77b7398c7be028f22a548302ab5c56d96d87926eb96",
+      "bytes": 4779
+    },
+    "splits/splits.parquet": {
+      "sha256": "689726e3d5a9c3263a8ee08e01073ab9c412008e14d8d51a89f7fa57e0295bcb",
+      "bytes": 5945
+    },
+    "splits/test.parquet": {
+      "sha256": "54e09b32db77516b2ffdaba6107341d196470010f7dfa57b70c45050fb8b8393",
+      "bytes": 2122
+    },
+    "splits/train.parquet": {
+      "sha256": "4f7d955511e9026a78f360d6779d77bf2aa7c790a3e34d5bbb048299634b64e4",
+      "bytes": 5130
+    },
+    "splits/val.parquet": {
+      "sha256": "d98107c2390e531c5b5e11b4adf1407bf23e21ec04c88218309162327c2e9fb5",
+      "bytes": 2075
+    }
+  },
+  "tables": {
+    "artists": [
+      "artist_id",
+      "name_lat",
+      "name_ar",
+      "aliases",
+      "country",
+      "source",
+      "created_at"
+    ],
+    "albums": [
+      "album_id",
+      "artist_id",
+      "title",
+      "title_norm",
+      "year",
+      "album_type",
+      "source_collection",
+      "source_uri",
+      "created_at"
+    ],
+    "works": [
+      "work_id",
+      "artist_id",
+      "title_lat",
+      "title_ar",
+      "title_norm",
+      "year",
+      "language",
+      "dialect",
+      "genre",
+      "maqam",
+      "is_medley",
+      "created_at"
+    ],
+    "recordings": [
+      "recording_id",
+      "work_id",
+      "artist_id",
+      "album_id",
+      "collection",
+      "legacy_track_id",
+      "disc_no",
+      "track_no",
+      "title_lat",
+      "title_ar",
+      "duration_s",
+      "audio_sha256",
+      "audio_md5",
+      "audio_crc32c",
+      "audio_bucket",
+      "audio_path",
+      "codec",
+      "bitrate_kbps",
+      "bytes",
+      "is_instrumental",
+      "is_generated",
+      "version_type",
+      "recording_group_id",
+      "audio_fingerprint",
+      "source_license",
+      "created_at"
+    ],
+    "legacy_ids": [
+      "namespace",
+      "value",
+      "recording_id",
+      "is_primary",
+      "note"
+    ],
+    "recording_works": [
+      "recording_id",
+      "work_id",
+      "position",
+      "is_medley"
+    ],
+    "lyrics": [
+      "lyric_id",
+      "work_id",
+      "recording_id",
+      "artist_name_raw",
+      "title_raw",
+      "title_ar",
+      "source",
+      "source_id",
+      "source_url",
+      "text",
+      "text_match",
+      "n_lines",
+      "n_words",
+      "arabic_ratio",
+      "harakat_ratio",
+      "has_translation",
+      "is_primary",
+      "completeness",
+      "source_license",
+      "retrieved_at"
+    ],
+    "timings": [
+      "timing_id",
+      "recording_id",
+      "run_id",
+      "srt_path",
+      "vtt_path",
+      "words_path",
+      "n_words",
+      "duration_s",
+      "model",
+      "model_revision",
+      "qa",
+      "is_preferred",
+      "artifact_sha256",
+      "created_at"
+    ],
+    "transcripts": [
+      "transcript_id",
+      "recording_id",
+      "album_id",
+      "abc_text",
+      "abc_path",
+      "status",
+      "model",
+      "model_revision",
+      "duration_s",
+      "gpu_seconds",
+      "rtf",
+      "artifact_sha256",
+      "created_at"
+    ],
+    "captions": [
+      "caption_id",
+      "recording_id",
+      "model",
+      "model_revision",
+      "instruments",
+      "vocals",
+      "production",
+      "caption_text",
+      "suno_prompt",
+      "caption_seconds",
+      "is_generated",
+      "artifact_sha256",
+      "created_at"
+    ],
+    "links": [
+      "link_id",
+      "src_type",
+      "src_id",
+      "dst_type",
+      "dst_id",
+      "relation",
+      "method",
+      "confidence",
+      "evidence",
+      "is_gold",
+      "created_at"
+    ],
+    "files": [
+      "file_id",
+      "source",
+      "bucket",
+      "repo",
+      "commit_sha",
+      "relative_path",
+      "uri",
+      "bytes",
+      "sha256",
+      "md5",
+      "crc32c",
+      "content_type",
+      "generation",
+      "etag",
+      "mtime",
+      "scanned_at"
+    ],
+    "coverage": [
+      "recording_id",
+      "work_id",
+      "collection",
+      "has_lyrics",
+      "has_timing",
+      "has_transcript",
+      "has_caption",
+      "n_lyrics",
+      "n_timings",
+      "min_link_confidence",
+      "unresolved_reason"
+    ],
+    "splits": [
+      "work_id",
+      "split"
+    ]
+  }
+}

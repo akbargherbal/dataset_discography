@@ -1,0 +1,288 @@
+{
+  "dataset": "dataset/v0.1",
+  "ok": true,
+  "n_checks": 44,
+  "n_failed": 0,
+  "n_warnings": 2,
+  "failed": [],
+  "warnings": [
+    {
+      "name": "expected_counts",
+      "ok": false,
+      "warning": true,
+      "detail": "deltas={'recordings': -1, 'album_tracks': 0, 'timings': 0, 'transcripts': 0, 'captions': 0, 'lyrics_gold': 3}"
+    },
+    {
+      "name": "lyrics_gold_count",
+      "ok": false,
+      "warning": true,
+      "detail": "deltas={'recordings': -1, 'album_tracks': 0, 'timings': 0, 'transcripts': 0, 'captions': 0, 'lyrics_gold': 3}"
+    }
+  ],
+  "checks": [
+    {
+      "name": "required_files",
+      "ok": true,
+      "warning": false,
+      "detail": "all present"
+    },
+    {
+      "name": "schema_artists",
+      "ok": true,
+      "warning": false,
+      "detail": "missing=[] extra=[]"
+    },
+    {
+      "name": "schema_albums",
+      "ok": true,
+      "warning": false,
+      "detail": "missing=[] extra=[]"
+    },
+    {
+      "name": "schema_works",
+      "ok": true,
+      "warning": false,
+      "detail": "missing=[] extra=[]"
+    },
+    {
+      "name": "schema_recordings",
+      "ok": true,
+      "warning": false,
+      "detail": "missing=[] extra=[]"
+    },
+    {
+      "name": "schema_legacy_ids",
+      "ok": true,
+      "warning": false,
+      "detail": "missing=[] extra=[]"
+    },
+    {
+      "name": "schema_lyrics",
+      "ok": true,
+      "warning": false,
+      "detail": "missing=[] extra=[]"
+    },
+    {
+      "name": "schema_timings",
+      "ok": true,
+      "warning": false,
+      "detail": "missing=[] extra=[]"
+    },
+    {
+      "name": "schema_transcripts",
+      "ok": true,
+      "warning": false,
+      "detail": "missing=[] extra=[]"
+    },
+    {
+      "name": "schema_captions",
+      "ok": true,
+      "warning": false,
+      "detail": "missing=[] extra=[]"
+    },
+    {
+      "name": "schema_links",
+      "ok": true,
+      "warning": false,
+      "detail": "missing=[] extra=[]"
+    },
+    {
+      "name": "schema_files",
+      "ok": true,
+      "warning": false,
+      "detail": "missing=[] extra=[]"
+    },
+    {
+      "name": "schema_coverage",
+      "ok": true,
+      "warning": false,
+      "detail": "missing=[] extra=[]"
+    },
+    {
+      "name": "schema_splits",
+      "ok": true,
+      "warning": false,
+      "detail": "missing=[] extra=[]"
+    },
+    {
+      "name": "recording_id_unique",
+      "ok": true,
+      "warning": false,
+      "detail": ""
+    },
+    {
+      "name": "work_id_unique",
+      "ok": true,
+      "warning": false,
+      "detail": ""
+    },
+    {
+      "name": "album_id_unique",
+      "ok": true,
+      "warning": false,
+      "detail": ""
+    },
+    {
+      "name": "recording_work_fk",
+      "ok": true,
+      "warning": false,
+      "detail": "0 recordings point to missing works"
+    },
+    {
+      "name": "null_work_has_reason",
+      "ok": true,
+      "warning": false,
+      "detail": "0 recordings have NULL work_id and no reason"
+    },
+    {
+      "name": "timings_recording_fk",
+      "ok": true,
+      "warning": false,
+      "detail": "0 rows point to missing recordings"
+    },
+    {
+      "name": "transcripts_recording_fk",
+      "ok": true,
+      "warning": false,
+      "detail": "0 rows point to missing recordings"
+    },
+    {
+      "name": "captions_recording_fk",
+      "ok": true,
+      "warning": false,
+      "detail": "0 rows point to missing recordings"
+    },
+    {
+      "name": "lyrics_work_fk",
+      "ok": true,
+      "warning": false,
+      "detail": "0 lyrics point to missing works"
+    },
+    {
+      "name": "link_endpoints",
+      "ok": true,
+      "warning": false,
+      "detail": "0 dangling link endpoints"
+    },
+    {
+      "name": "audio_path_relative",
+      "ok": true,
+      "warning": false,
+      "detail": "0 non-relative audio paths"
+    },
+    {
+      "name": "no_audio_uri_column",
+      "ok": true,
+      "warning": false,
+      "detail": ""
+    },
+    {
+      "name": "timings_paths_relative",
+      "ok": true,
+      "warning": false,
+      "detail": "0 non-relative paths"
+    },
+    {
+      "name": "transcripts_paths_relative",
+      "ok": true,
+      "warning": false,
+      "detail": "0 non-relative paths"
+    },
+    {
+      "name": "no_media_files",
+      "ok": true,
+      "warning": false,
+      "detail": "found []"
+    },
+    {
+      "name": "timings_monotonic",
+      "ok": true,
+      "warning": false,
+      "detail": "0 invalid timings"
+    },
+    {
+      "name": "abc_structure",
+      "ok": true,
+      "warning": false,
+      "detail": "0 invalid ABC rows; 9 flagged no-abc rows"
+    },
+    {
+      "name": "gold_confidence",
+      "ok": true,
+      "warning": false,
+      "detail": "0 gold links below threshold"
+    },
+    {
+      "name": "confidence_range",
+      "ok": true,
+      "warning": false,
+      "detail": "0 out-of-range confidence values"
+    },
+    {
+      "name": "links_have_evidence",
+      "ok": true,
+      "warning": false,
+      "detail": "all links carry evidence"
+    },
+    {
+      "name": "split_unique_work",
+      "ok": true,
+      "warning": false,
+      "detail": ""
+    },
+    {
+      "name": "split_values",
+      "ok": true,
+      "warning": false,
+      "detail": "values=['test', 'train', 'val']"
+    },
+    {
+      "name": "split_files_match",
+      "ok": true,
+      "warning": false,
+      "detail": "split parquet files do not match splits.parquet"
+    },
+    {
+      "name": "split_no_leakage",
+      "ok": true,
+      "warning": false,
+      "detail": "0 works in more than one split"
+    },
+    {
+      "name": "manifest_hashes",
+      "ok": true,
+      "warning": false,
+      "detail": "0 mismatches"
+    },
+    {
+      "name": "dataset_size",
+      "ok": true,
+      "warning": false,
+      "detail": "3.48 MiB"
+    },
+    {
+      "name": "snapshot_id",
+      "ok": true,
+      "warning": false,
+      "detail": "snap_83c2acbb6a0a4466f3e5fd2d"
+    },
+    {
+      "name": "expected_counts",
+      "ok": false,
+      "warning": true,
+      "detail": "deltas={'recordings': -1, 'album_tracks': 0, 'timings': 0, 'transcripts': 0, 'captions': 0, 'lyrics_gold': 3}"
+    },
+    {
+      "name": "lyrics_gold_count",
+      "ok": false,
+      "warning": true,
+      "detail": "deltas={'recordings': -1, 'album_tracks': 0, 'timings': 0, 'transcripts': 0, 'captions': 0, 'lyrics_gold': 3}"
+    },
+    {
+      "name": "unresolved_reasons",
+      "ok": true,
+      "warning": false,
+      "detail": "every unresolved row has a reason"
+    }
+  ]
+}

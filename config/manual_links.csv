@@ -1,0 +1,4 @@
+# Manual overrides applied after automated matching.
+# Columns: src_type,src_id,dst_type,dst_id,relation,method,confidence,evidence
+# Empty in v0.1; add reviewed links here and re-run link_exact/ingest_lyrics.
+src_type,src_id,dst_type,dst_id,relation,method,confidence,evidence

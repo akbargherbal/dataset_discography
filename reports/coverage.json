@@ -1,0 +1,84 @@
+{
+  "dataset": "dataset/v0.1",
+  "counts": {
+    "recordings": 328,
+    "works": 224,
+    "links": 997,
+    "unresolved": 66
+  },
+  "coverage": {
+    "has_lyrics": 54.0,
+    "has_timing": 50.9,
+    "has_transcript": 72.0,
+    "has_caption": 70.1
+  },
+  "by_collection": [
+    {
+      "collection": "discography_album",
+      "recordings": 236,
+      "has_lyrics": 177,
+      "has_timing": 167,
+      "has_transcript": 236,
+      "has_caption": 230,
+      "has_lyrics_pct": 75.0,
+      "has_timing_pct": 70.8,
+      "has_transcript_pct": 100.0,
+      "has_caption_pct": 97.5
+    },
+    {
+      "collection": "spotify_p0",
+      "recordings": 44,
+      "has_lyrics": 0,
+      "has_timing": 0,
+      "has_transcript": 0,
+      "has_caption": 0,
+      "has_lyrics_pct": 0.0,
+      "has_timing_pct": 0.0,
+      "has_transcript_pct": 0.0,
+      "has_caption_pct": 0.0
+    },
+    {
+      "collection": "spotify_pd",
+      "recordings": 35,
+      "has_lyrics": 0,
+      "has_timing": 0,
+      "has_transcript": 0,
+      "has_caption": 0,
+      "has_lyrics_pct": 0.0,
+      "has_timing_pct": 0.0,
+      "has_transcript_pct": 0.0,
+      "has_caption_pct": 0.0
+    },
+    {
+      "collection": "youtube_ref",
+      "recordings": 13,
+      "has_lyrics": 0,
+      "has_timing": 0,
+      "has_transcript": 0,
+      "has_caption": 0,
+      "has_lyrics_pct": 0.0,
+      "has_timing_pct": 0.0,
+      "has_transcript_pct": 0.0,
+      "has_caption_pct": 0.0
+    }
+  ],
+  "unresolved_reasons": {
+    "missing_lyrics": 49,
+    "no_lyrics_match": 5,
+    "ambiguous_lyrics": 5,
+    "missing_lyrics_text": 4,
+    "instrumental_no_lyrics": 3
+  },
+  "method_mean_confidence": {
+    "existing_index": 0.9,
+    "legacy_track_id": 0.98,
+    "sha256_exact": 1.0,
+    "title_exact": 0.98,
+    "title_map_gold": 0.98,
+    "youtube_id": 0.978
+  },
+  "mean_link_confidence": 97.08,
+  "manual_review_sample": "reports/manual_review_sample.csv",
+  "gold_threshold": 0.95,
+  "pipeline_version": "0.1.0"
+}
